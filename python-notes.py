@@ -25,7 +25,7 @@ age = 25 # Python knows this is an integer
 
 # Integer: A whole number without decimals, can be positive or negative
 my_integer_var = 10
-print('Integer:'. my_integer_var) # Integer: 10
+print('Integer:', my_integer_var) # Integer: 10
 
 # Float: A umber with decimal points, can be positive or negative
 my_float_var = 4.50
@@ -86,3 +86,22 @@ isinstance('Hello world', str) # True
 isinstance(True, bool) # True
 isinstance(42, int) # True
 isinstance('Jhon Doe', int) # False
+
+# What are strings and what is string Immutability?
+# A string is a sequence of characters surrounded by either single or double quotation marks. You can use either or:
+my_str_1 = 'Hello'
+my_str_2 = "World"
+# If you need a multi-line string, you can use tripple double quotes or single quotes:
+my_str_3 = """Multiline
+String"""
+my_str_4 = '''Another
+multiline-String'''
+print(my_str_3)
+print(my_str_4)
+# If your coding a string and it contains either single or double quotation marks, use the opposite of the ones inside the string to wrapt the string in: 
+msg = "It's a sunny day"
+quote = 'She said, "Hello World"'
+
+
+
+
