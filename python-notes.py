@@ -267,3 +267,63 @@ title_case_my_str = my_str.title()
 print(title_case_my_str) # Hello World
 
 # Objective 5
+# How do you work with integers and floating point Numbers?
+# Integers and floats are the primary numeric data types in python. You can store numeric data and perform mathematical operations with them
+
+# Integers: Whole numbers without decimal points, either positive or negative:
+my_int_1 = 56
+my_int_2 = -4
+print(type(my_int_1)) # <class 'int'>
+print(type(my_int_2)) # <class 'int'>
+    # Performing an operation with integers (addition)
+my_int_1 = 56
+my_int_2 = 12
+sum_ints = my_int_1 + my_int_2
+print('Integer Addition:', sum_ints) # Integer Addition: 68
+    # Performing an operation with integers (subtraction)
+my_int_1 = 56
+my_int_2 = 12
+diff_ints = my_int_1 - my_int_2
+print('Integer Subtraction:', diff_ints) # Integer Subtraction: 44
+    # Performing an operation with integers (multiplication)
+my_int_1 = 12
+my_int_2 = 4
+product_ints = my_int_1 * my_int_2
+print('Integer Multiplication:', product_ints) # Integer Multiplication: 48
+    # Performing an operation with integers (division)
+my_int_1 = 56
+my_int_2 = 12
+div_ints = my_int_1 / my_int_2
+print('Integer Division:', div_ints) # Integer Division: 4.666666666666667
+
+# Floats: Positive or negative numbers with decimal points like 3.14, -0.5, or 0.0
+my_float_1 = -12.0
+my_float_2 = 4.9
+print(type(my_float_1)) # <class 'float'>
+print(type(my_float_2)) # <class 'float'>
+    # Performing an operation with float (addition)
+my_float_1 = 5.4
+my_float_2 = 12.0
+float_addition = my_float_1 + my_float_2
+print('Float Addition:', float_addition) # Float Addition: 17.4
+    # Performing an operation with float (subtraction)
+my_float_1 = 5.4
+my_float_2 = 12.0
+float_subtraction = my_float_2 - my_float_1
+print('Float Subtraction:', float_subtraction) # Float Subtraction: 6.6
+    # Performing an operation with float (division)
+my_float_1 = 5.4
+my_float_2 = 12.0
+float_multiplication = my_float_2 * my_float_1
+print('Float Multiplication:', float_multiplication) # Float Multiplication: 64.80000000000001
+    # Performing an operation with float (division)
+my_float_1 = 5.4
+my_float_2 = 12.0
+float_division = my_float_2 / my_float_1
+print('Float Division:', float_division) # Float Division: 2.222222222222222
+
+# If you add an integer and a float, the result is automatically converted to a float: 
+my_int = 56
+my_float = 5.4
+sum_int_and_float = my_int + my_float
+print(sum_int_and_float)
