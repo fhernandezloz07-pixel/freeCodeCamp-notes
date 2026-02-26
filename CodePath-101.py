@@ -58,4 +58,36 @@ classify_age(18)
 classify_age(7)
 classify_age(50)
 
+# Problem 7: What time is it? 
+def what_time_is_it(hour): # hour is the parameter of the function what_time_is_it
+    if hour == 2:
+
+        return "taco time 🌮"
+    elif hour == 12:
+        return "peanut butter jelly time 🥪"
+    else: 
+        return "nap time 😴" 
+
+time = what_time_is_it(2)
+print(time)
+time = what_time_is_it(7)
+print(time)
+time = what_time_is_it(12)
+print(time)
+
+# Problem 8: Blackjack
+def blackjack(score): 
+    if score == 21:
+        print("Blackjack!")
+    elif score > 21: 
+        print("Bust!")
+    elif score >= 17 and score <= 21: # in python use the built-in and for connecting inside the if statement!
+        print("Nice hand!")
+    elif score < 17:
+        print("Hit me!")
+
+blackjack(21)
+blackjack(24)
+blackjack(19)
+blackjack(10)
 
