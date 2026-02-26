@@ -23,10 +23,39 @@ print_menu(menu) # Prints the menu item to console
 # Problem 4: Sum of Two Integers
 def sum(a, b): # here we are sort of declaring sum() to know what it will do for all cases
     return a + b
-first = sum(13, 27) # use sum() to calculate the sum of 13 and 27
-result = sum(first, first) # use sum() to double the calculated sum
+num_sum = sum(13, 27) # use sum() to calculate the sum of 13 and 27
+result_sum = sum(num_sum, num_sum) # use sum() to double the calculated sum
 
-print(result)# Print the result to the console
+print(result_sum)# Print the result to the console
 
-# Problem 5
+# Problem 5: Product of two integers
+def product(a, b): # Writing the function Product() that returns the product of two integers a and b
+    return a * b
+result_product = product(22, 7) # Example product of 22 times 7
+print(result_product) # Printing the product of two numbers a and b to console
+
+# Problem 6: Classify Age
+def classify_age(age): 
+    if age < 18:
+       return "child"
+    elif age >= 18:
+        return "adult"
+
+output = classify_age(18)
+print(output)
+output = classify_age(7)
+print(output)
+output = classify_age(50)
+print(output)
+    # Another way to do this with print statements inside the if elif statement: 
+def classify_age(age): 
+    if age < 18:
+       print("child")
+    elif age >= 18:
+        print("adult")
+
+classify_age(18)
+classify_age(7)
+classify_age(50)
+
 
