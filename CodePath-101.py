@@ -91,3 +91,19 @@ blackjack(24)
 blackjack(19)
 blackjack(10)
 
+# Problem 9: First Item
+def get_first(lst): 
+    if lst == []:  # add the empty condition first before you check for the first item in the list 
+        return None
+    return lst[0]
+
+print(get_first([3,1,6,7,5]))
+
+# Problem 10: Last Item 
+def get_last(lst): 
+    if lst == []:
+        return None
+    return lst[-1]
+
+print(get_last([3,1,6,7,5])) # printing the fuction properties we just coded for the specified list!
+
