@@ -5,6 +5,7 @@ def hello_world():
 
 hello_world() # Prints 'Hello world!'
 
+print("--------------------------------------------------------------------")
 # Problem 2: Today's Mood
 def todays_mood():
     mood = "😎"
@@ -12,6 +13,7 @@ def todays_mood():
 
 todays_mood()
 
+print("--------------------------------------------------------------------")
 # Problem 3: Lunch Menus
 def print_menu(menu):
     print("Lunch menu to day is: " + menu)
@@ -20,6 +22,7 @@ menu = "🍕"
 print_menu(menu) # Prints the menu item to console
 # The variable listed between the () of a function definition is known as a parameter. 
 
+print("--------------------------------------------------------------------")
 # Problem 4: Sum of Two Integers
 def sum(a, b): # here we are sort of declaring sum() to know what it will do for all cases
     return a + b
@@ -28,12 +31,14 @@ result_sum = sum(num_sum, num_sum) # use sum() to double the calculated sum
 
 print(result_sum)# Print the result to the console
 
+print("--------------------------------------------------------------------")
 # Problem 5: Product of two integers
 def product(a, b): # Writing the function Product() that returns the product of two integers a and b
     return a * b
 result_product = product(22, 7) # Example product of 22 times 7
 print(result_product) # Printing the product of two numbers a and b to console
 
+print("--------------------------------------------------------------------")
 # Problem 6: Classify Age
 def classify_age(age): 
     if age < 18:
@@ -47,6 +52,7 @@ output = classify_age(7)
 print(output)
 output = classify_age(50)
 print(output)
+print("-----------------")
     # Another way to do this with print statements inside the if elif statement: 
 def classify_age(age): 
     if age < 18:
@@ -58,6 +64,7 @@ classify_age(18)
 classify_age(7)
 classify_age(50)
 
+print("--------------------------------------------------------------------")
 # Problem 7: What time is it? 
 def what_time_is_it(hour): # hour is the parameter of the function what_time_is_it
     if hour == 2:
@@ -75,6 +82,7 @@ print(time)
 time = what_time_is_it(12)
 print(time)
 
+print("--------------------------------------------------------------------")
 # Problem 8: Blackjack
 def blackjack(score): 
     if score == 21:
@@ -91,6 +99,7 @@ blackjack(24)
 blackjack(19)
 blackjack(10)
 
+print("--------------------------------------------------------------------")
 # Problem 9: First Item
 def get_first(lst): 
     if lst == []:  # add the empty condition first before you check for the first item in the list 
@@ -106,4 +115,28 @@ def get_last(lst):
     return lst[-1]
 
 print(get_last([3,1,6,7,5])) # printing the fuction properties we just coded for the specified list!
+
+print("--------------------------------------------------------------------")
+# Problem 11: Counter
+# write a function counter() that uses the built-in range function to: 
+def counter(stop):
+    # print numbers between 1 and a given stop value (inclusive)
+    for i in range(1, stop + 1): # The plus includes the last indez instead of excluding it!
+        print(i) #???
+counter(7) # Example code 
+
+print("--------------------------------------------------------------------")
+# Problem 12: Sum of 1 to 10
+# Accumulator variable is a variable that keeps running total while you program loops, so it grows step-by-step
+def sum_ten():
+    accumulator_sum = 0 # start the accumulator at 0
+    for i in range(1, 11): # sum from 1 to 11
+        accumulator_sum += i # add the current number to the accumulator
+    return accumulator_sum 
+print(sum_ten()) # Print your code!
+
+# 
+
+
+
 
