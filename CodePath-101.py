@@ -135,9 +135,32 @@ def sum_ten():
     return accumulator_sum 
 print(sum_ten()) # Print your code!
 
+print("--------------------------------------------------------------------")
 # Problem 13: Total sum 
 def sum_positive_range(stop):
-    pass
+    accumulator_sum = 0 # start total at 0
+    for i in range(1, stop + 1): 
+        accumulator_sum += i
+    return accumulator_sum
+
+print(sum_positive_range(6)) # 1 + 2 + 3 + 4 + 5 + 6 = 21
+# what did you learn? when you put 6 in the pring its basically telling the code that the stop parameter that is built in should stop at 6
+
+print("--------------------------------------------------------------------")
+# Problem 14: Total sum in range
+# Write a function sum_range()
+# returns the sum of numbres from a given start value
+# to a given stop value, inclusive
+def sum_range(start, stop):
+    accumulator_sum = 0 # think of this as an empty bucket that is filled with each number from start to stop. So istead of assigning it to start simply assign to 0. ALWAYS!
+    for i in range(start, stop + 1):
+        accumulator_sum += i
+    return accumulator_sum
+
+print(sum_range(3, 9))
+# What did you learn? Always start the accumulator at 0 for good pracice. Return the accumulator sum for for that you first need to create it!
+
+print("--------------------------------------------------------------------")
 
 
 
