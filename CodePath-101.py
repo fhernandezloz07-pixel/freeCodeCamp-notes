@@ -135,7 +135,10 @@ def sum_ten():
     return accumulator_sum 
 print(sum_ten()) # Print your code!
 
-# 
+# Problem 13: Total sum 
+def sum_positive_range(stop):
+    pass
+
 
 
 
