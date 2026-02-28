@@ -5,7 +5,7 @@ def hello_world():
 
 hello_world() # Prints 'Hello world!'
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 2: Today's Mood
 def todays_mood():
     mood = "😎"
@@ -13,7 +13,7 @@ def todays_mood():
 
 todays_mood()
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 3: Lunch Menus
 def print_menu(menu):
     print("Lunch menu to day is: " + menu)
@@ -22,7 +22,7 @@ menu = "🍕"
 print_menu(menu) # Prints the menu item to console
 # The variable listed between the () of a function definition is known as a parameter. 
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 4: Sum of Two Integers
 def sum(a, b): # here we are sort of declaring sum() to know what it will do for all cases
     return a + b
@@ -31,14 +31,14 @@ result_sum = sum(num_sum, num_sum) # use sum() to double the calculated sum
 
 print(result_sum)# Print the result to the console
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 5: Product of two integers
 def product(a, b): # Writing the function Product() that returns the product of two integers a and b
     return a * b
 result_product = product(22, 7) # Example product of 22 times 7
 print(result_product) # Printing the product of two numbers a and b to console
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 6: Classify Age
 def classify_age(age): 
     if age < 18:
@@ -64,7 +64,7 @@ classify_age(18)
 classify_age(7)
 classify_age(50)
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 7: What time is it? 
 def what_time_is_it(hour): # hour is the parameter of the function what_time_is_it
     if hour == 2:
@@ -82,7 +82,7 @@ print(time)
 time = what_time_is_it(12)
 print(time)
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 8: Blackjack
 def blackjack(score): 
     if score == 21:
@@ -99,7 +99,7 @@ blackjack(24)
 blackjack(19)
 blackjack(10)
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 9: First Item
 def get_first(lst): 
     if lst == []:  # add the empty condition first before you check for the first item in the list 
@@ -116,7 +116,7 @@ def get_last(lst):
 
 print(get_last([3,1,6,7,5])) # printing the fuction properties we just coded for the specified list!
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 11: Counter
 # write a function counter() that uses the built-in range function to: 
 def counter(stop):
@@ -125,7 +125,7 @@ def counter(stop):
         print(i) #???
 counter(7) # Example code 
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 12: Sum of 1 to 10
 # Accumulator variable is a variable that keeps running total while you program loops, so it grows step-by-step
 def sum_ten():
@@ -135,7 +135,7 @@ def sum_ten():
     return accumulator_sum 
 print(sum_ten()) # Print your code!
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 13: Total sum 
 def sum_positive_range(stop):
     accumulator_sum = 0 # start total at 0
@@ -146,7 +146,7 @@ def sum_positive_range(stop):
 print(sum_positive_range(6)) # 1 + 2 + 3 + 4 + 5 + 6 = 21
 # what did you learn? when you put 6 in the pring its basically telling the code that the stop parameter that is built in should stop at 6
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
 # Problem 14: Total sum in range
 # Write a function sum_range()
 # returns the sum of numbres from a given start value
@@ -160,9 +160,33 @@ def sum_range(start, stop):
 print(sum_range(3, 9))
 # What did you learn? Always start the accumulator at 0 for good pracice. Return the accumulator sum for for that you first need to create it!
 
-print("--------------------------------------------------------------------")
+print("-------------------------------------------------------------------")
+# Problem 15: Negative numbers 
+# Write a function print_negatives() that takes a list of integers lst 
+# and prints all negative numbers in the list.
+def print_negatives(lst):
+    found_negative = False # checks if there are even any negatives in a given list
+    if lst == []: # accounting for the fact that a list might be empty
+        return None
+    for num in lst: # num or i as we use it in the for loops is just a variable name I choose. They are placeholders that represent "each element of the list as we loop..." 
+        if num < 0: # check if there is a negative number
+            print(num) # print that number then!
+            found_negative = True # Because finding negative numbers makes found_negative true, the opposite would be that if we didn't find negative numbers found_negative would be false 
+    if not found_negative: # if this were to be inside the nested if statement, it would print out EACH time there was a positive number found in any list. 
+        print("None")
+        
+print_negatives([1,2,3,4,5]) # sample list without negative numbers
+print_negatives([3,-2,2,1,-5]) # sample list with negative numbers 
+# What did you learn? i and num are placeholder variables to help me in my code, they don't need to be initialzed
+# A for loop and an if loop never require a return.
+    # A for loop is a way to repeat actions
+    # An if loop is a way to make desicions
+    # it matters where we put the loops, whether inside or outside.
+        # if inside, the code runs once PER element, so it prints out something on one number, then it goes back to the beginning and cheks the same condition for the next number.
+        # if ourside the loop, the program has already examined every element. Only then can it correctly decide whether a negative number was ever found, thus if none were found then the conclusion may be one thing!!
+            # think of it as python covering the list and only incovering one number at a time for a given condition you set. It chcks each one! Then it repeats the same steps for another calling and so on. 
 
-
-
-
-
+print("-------------------------------------------------------------------")
+# Problem Set version 2
+# Problem 1: Hello user!
+#Write a function greet_user() that takes in a string name as a parameter and prints "Hello <name>".
