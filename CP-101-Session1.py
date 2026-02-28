@@ -118,7 +118,7 @@ print(get_last([3,1,6,7,5])) # printing the fuction properties we just coded for
 
 print("-------------------------------------------------------------------")
 # Problem 11: Counter
-# write a function counter() that uses the built-in range function to: 
+    # write a function counter() that uses the built-in range function to: 
 def counter(stop):
     # print numbers between 1 and a given stop value (inclusive)
     for i in range(1, stop + 1): # The plus includes the last indez instead of excluding it!
@@ -127,7 +127,7 @@ counter(7) # Example code
 
 print("-------------------------------------------------------------------")
 # Problem 12: Sum of 1 to 10
-# Accumulator variable is a variable that keeps running total while you program loops, so it grows step-by-step
+    # Accumulator variable is a variable that keeps running total while you program loops, so it grows step-by-step
 def sum_ten():
     accumulator_sum = 0 # start the accumulator at 0
     for i in range(1, 11): # sum from 1 to 11
@@ -148,9 +148,9 @@ print(sum_positive_range(6)) # 1 + 2 + 3 + 4 + 5 + 6 = 21
 
 print("-------------------------------------------------------------------")
 # Problem 14: Total sum in range
-# Write a function sum_range()
-# returns the sum of numbres from a given start value
-# to a given stop value, inclusive
+    # Write a function sum_range()
+    # returns the sum of numbres from a given start value
+    # to a given stop value, inclusive
 def sum_range(start, stop):
     accumulator_sum = 0 # think of this as an empty bucket that is filled with each number from start to stop. So istead of assigning it to start simply assign to 0. ALWAYS!
     for i in range(start, stop + 1):
@@ -162,8 +162,8 @@ print(sum_range(3, 9))
 
 print("-------------------------------------------------------------------")
 # Problem 15: Negative numbers 
-# Write a function print_negatives() that takes a list of integers lst 
-# and prints all negative numbers in the list.
+    # Write a function print_negatives() that takes a list of integers lst 
+    # and prints all negative numbers in the list.
 def print_negatives(lst):
     found_negative = False # checks if there are even any negatives in a given list
     if lst == []: # accounting for the fact that a list might be empty
@@ -189,4 +189,26 @@ print_negatives([3,-2,2,1,-5]) # sample list with negative numbers
 print("-------------------------------------------------------------------")
 # Problem Set version 2
 # Problem 1: Hello user!
-#Write a function greet_user() that takes in a string name as a parameter and prints "Hello <name>".
+    # Write a function greet_user() 
+    # that takes in a string name as a parameter 
+    # and prints "Hello <name>".
+def greet_user(name):
+    print("Hello " + name)
+
+student_1 = "Michael"
+greet_user(student_1)
+
+print("-------------------------------------------------------------------")
+# Problem 2: Calculate Difference!
+    # Write a function difference() 
+    # that returns the difference between two integers a and b 
+    # (b should be subtracted from a).
+def difference(a, b):
+    return a - b
+
+diff = difference(8, 3)
+print("diff =", diff) # istead of simply printing out 5, it prints out diff = 5.
+# What did you learn? if we want to return a string as well as a number, the number should be imputted into a variable, and then that variable into the print statement with the + value. 
+
+print("-------------------------------------------------------------------")
+# Problem 3: List
